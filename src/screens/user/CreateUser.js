@@ -1,5 +1,4 @@
 import React from 'react'
-import './CreateUser.css';
 
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';

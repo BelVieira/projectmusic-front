@@ -43,24 +43,24 @@ class FindUser extends React.Component {
     find = () => {
         var params = '?';
 
-        if(this.state.id !== '') {
-            if (params !== '?') {
+        if(this.state.id != '') {
+            if (params != '?') {
                 params = `${params}&`;
             }
 
             params = `${params}id = ${this.state.id}`;
         }
 
-        if(this.state.name !== '') {
-            if (params !== '?') {
+        if(this.state.name != '') {
+            if (params != '?') {
                 params = `${params}&`;
             }
 
             params = `${params}name = ${this.state.name}`;
         }
 
-        if(this.state.email !== '') {
-            if (params !== '?') {
+        if(this.state.email != '') {
+            if (params != '?') {
                 params = `${params}&`;
             }
 
@@ -74,7 +74,7 @@ class FindUser extends React.Component {
                 this.setState({users});
                 console.log(users)
             }
-        ).catch ( error =>
+        ) .catch ( error =>
             {
                 console.log(error.response)
             }
